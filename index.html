@@ -41,8 +41,8 @@
           <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#past-haikus">Haikus</a>
-          </li>
+          <a class="nav-link" href="#past-haikus">Haikus</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
         </li>
@@ -52,7 +52,12 @@
       <h1 class="header hide">... welcome ...</h1>
       <div class="row">
         <div class="mic col-sm">
-          <img src="./rmh.png" class="img img-fluid" alt="Responsive image" />
+          <img
+            src="./rmh.png"
+            id="main-img"
+            class="img-fluid"
+            alt="Responsive image"
+          />
         </div>
         <div id="typewriter" class="main-haiku-container col-sm">
           <h2 class="main-haiku ">
@@ -264,13 +269,15 @@
   });
 
   // typewriter animation //
-  function animate(elements) {
+  function animate(elements, callback) {
     var i = 0;
     (function iterate() {
       if (i < elements.length) {
         elements[i].style.display = "block";
         animateNode(elements[i], iterate);
         i++;
+      } else {
+        callback();
       }
     })();
 
@@ -299,19 +306,7 @@
     }
   }
 
-  animate($("#typewriter").children());
+  animate($("#typewriter").children(), () => {
+    document.getElementById("main-img").classList.add("spin");
+  });
 </script>
-
-<!-- <div class="card p-3 text-center" id="past-haikus">
-    <blockquote class="blockquote mb-0">
-      <p>
-        Everything I touch <br />with tenderness, alas, <br />pricks
-        like a bramble.
-      </p>
-      <footer class="blockquote-footer">
-        <small>
-          <cite title="Source Title">thumbs up thumbs down</cite>
-        </small>
-      </footer>
-    </blockquote>
-  </div> -->

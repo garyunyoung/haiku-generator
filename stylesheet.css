@@ -3,11 +3,11 @@ html {
 }
 
 .top {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    text-transform: uppercase;
-    pointer-events: none;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  pointer-events: none;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 }
 
 .sub-container {
-    min-height: 80vh;
+  min-height: 80vh;
 }
 
 .bg-light {
@@ -25,14 +25,13 @@ body {
 }
 
 .logo {
-    opacity: .6;
+  opacity: 0.6;
 }
 
-.img {
+#main-img {
   width: 35vw;
 }
-
-.mic:hover > .img {
+.spin {
   transform: rotate(360deg);
   transition: all 0.5s linear;
 }
@@ -41,12 +40,12 @@ body {
   padding: 3vh;
   cursor: default;
   font-weight: bold;
-  opacity: .8;
+  opacity: 0.8;
   text-align: center;
 }
 
 .hide {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .sub-header {
@@ -56,7 +55,6 @@ body {
   color: black;
   cursor: pointer;
 }
-
 
 .main-haiku-container {
   display: flex;
