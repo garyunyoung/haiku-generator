@@ -7,6 +7,10 @@ body {
   font-family: "Cutive Mono", monospace;
 }
 
+.sub-container {
+    min-height: 80vh;
+}
+
 .bg-light {
   background-color: white !important;
   border-bottom: 1px dashed grey;
@@ -29,22 +33,22 @@ body {
   padding: 3vh;
   cursor: default;
   font-weight: bold;
+  opacity: .8;
+  text-align: center;
+}
+
+.hide {
+    visibility: hidden;
 }
 
 .sub-header {
-  margin-top: 5vh;
+  padding-top: 10vh;
+  margin-top: 15vh;
   margin-bottom: 5vh;
   color: black;
   cursor: pointer;
 }
 
-.sub-header:hover {
-  color: #007bff;
-}
-
-.sub-header-link:hover {
-  text-decoration: none;
-}
 
 .main-haiku-container {
   display: flex;
@@ -74,7 +78,7 @@ body {
 
 .page-footer {
   margin-top: 5vh;
-  margin-bottom: 3vh;
+  border-top: 1px dashed grey;
 }
 
 .fab {
