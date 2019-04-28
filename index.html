@@ -57,7 +57,7 @@
           />
         </div>
         <div id="typewriter" class="main-haiku-container col-sm">
-        <!-- <div class="main-haiku-container col-sm"> -->
+          <!-- <div class="main-haiku-container col-sm"> -->
           <h2 class="main-haiku">
             An old silent pond... <br />A frog jumps into the pond,
             <br />splash! Silence again.
@@ -70,7 +70,6 @@
         </div>
       </div>
 
-      
       <div class="container sub-container">
         <h1 id="past-haikus" class="header sub-header">... past haikus ...</h1>
         <div class="card-columns">
@@ -223,91 +222,7 @@
         <a href="#"> ratemyhaiku.com</a>
       </div>
     </footer>
+    <script type="text/javascript" src="./js/rating.js"></script>
+    <script type="text/javascript" src="./js/typewriter.js"></script>
   </body>
 </html>
-<script>
-  jQuery(document).ready(function($) {
-    $(".rating .star")
-      .hover(function() {
-        $(this).addClass("to_rate");
-        $(this)
-          .parent()
-          .find(".star:lt(" + $(this).index() + ")")
-          .addClass("to_rate");
-        $(this)
-          .parent()
-          .find(".star:gt(" + $(this).index() + ")")
-          .addClass("no_to_rate");
-      })
-      .mouseout(function() {
-        $(this)
-          .parent()
-          .find(".star")
-          .removeClass("to_rate");
-        $(this)
-          .parent()
-          .find(".star:gt(" + $(this).index() + ")")
-          .removeClass("no_to_rate");
-      })
-      .click(function() {
-        $(this)
-          .removeClass("to_rate")
-          .addClass("rated");
-        $(this)
-          .parent()
-          .find(".star:lt(" + $(this).index() + ")")
-          .removeClass("to_rate")
-          .addClass("rated");
-        $(this)
-          .parent()
-          .find(".star:gt(" + $(this).index() + ")")
-          .removeClass("no_to_rate")
-          .removeClass("rated");
-        /*Save your rate*/
-        /*TODO*/
-      });
-  });
-
-  // typewriter animation //
-  function animate(elements, callback) {
-    var i = 0;
-    (function iterate() {
-      if (i < elements.length) {
-        elements[i].style.display = "block";
-        animateNode(elements[i], iterate);
-        i++;
-      } else {
-        callback();
-      }
-    })();
-
-    function animateNode(element, callback) {
-      var pieces = [];
-      if (element.nodeType == 1) {
-        while (element.hasChildNodes()) {
-          pieces.push(element.removeChild(element.firstChild));
-        }
-
-        setTimeout(function childStep() {
-          if (pieces.length) {
-            animateNode(pieces[0], childStep);
-            element.appendChild(pieces.shift());
-          } else callback();
-        }, 0);
-      } else if (element.nodeType == 3) {
-        pieces = element.data.match(/.{0,1}/g);
-        element.data = "";
-
-        (function addText() {
-          element.data += pieces.shift();
-          setTimeout(pieces.length ? addText : callback, 1000 / 30);
-        })();
-      }
-    }
-  }
-
-  animate($("#typewriter").children(), () => {
-    document.getElementById("main-img").classList.add("spin");
-    document.getElementById("sticky-nav").classList.add("fade-in");
-  });
-</script>
