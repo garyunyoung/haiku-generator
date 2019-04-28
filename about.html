@@ -50,8 +50,9 @@
         </li>
       </ul>
     </nav>
+
     <div class="container">
-      <h1 class="header">... about ...</h1>
+      <h1 class="header hide">... about ...</h1>
       <div class="row">
         <div class="mic col-sm">
           <img
@@ -69,11 +70,98 @@
             This is a brief descritpion of what I am doing.
             <div>
               <a href="./index.html" class="btn btn-dark">back</a>
-              <a href="./index.html#past-haikus" class="btn btn-dark">past haikus</a>
-
+              <a href="#contact-form" class="btn btn-dark">contact</a>
+              <a href="./index.html#past-haikus" class="btn btn-dark"
+                >past haikus</a
+              >
             </div>
           </h2>
         </div>
+      </div>
+
+      <div class="container sub-container">
+        <h1 class="header sub-header">... send haiku ...</h1>
+        <form id="contact-form" method="post" action="contact.php" role="form">
+          <div class="messages"></div>
+
+          <div class="controls">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_name">Firstname</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Please enter your firstname"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_lastname">Lastname</label>
+                  <input
+                    id="form_lastname"
+                    type="text"
+                    name="surname"
+                    class="form-control"
+                    placeholder="Please enter your lastname"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_email">Email *</label>
+                  <input
+                    id="form_email"
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Please enter your email"
+                    required="required"
+                    data-error="Please enter a valid email address."
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_email">Subject</label>
+                  <input
+                    id="form_subject"
+                    type="text"
+                    name="subject"
+                    class="form-control"
+                    placeholder="Please enter a subject"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="form_message">Haiku *</label>
+                  <textarea
+                    id="form_message"
+                    name="message"
+                    class="form-control"
+                    placeholder="Haiku for me..."
+                    rows="6"
+                    required="required"
+                    data-error="Please, leave a haiku."
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <button class='btn send'>
+                    send haiku
+                  <!-- <i class="fa fa-paper-plane" aria-hidden="true"></i> -->
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
 
@@ -167,7 +255,7 @@
   }
 
   animate($("#typewriter").children(), () => {
-    document.getElementById("main-img").classList.add("spin");
-    document.getElementById("sticky-nav").classList.add("fade-in");
+    // document.getElementById("main-img").classList.add("spin");
+    // document.getElementById("sticky-nav").classList.add("fade-in");
   });
 </script>
