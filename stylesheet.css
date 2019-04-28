@@ -11,10 +11,30 @@ body {
   width: 35vw;
 }
 
+.img:hover {
+  transform: rotate(360deg);
+  transition: all 0.5s linear;
+}
+
 .header {
   padding: 3vh;
   cursor: default;
   font-weight: bold;
+}
+
+.sub-header {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  color: black;
+  cursor: pointer;
+}
+
+.sub-header:hover {
+  color: #007bff;
+}
+
+.sub-header-link:hover {
+  text-decoration: none;
 }
 
 .main-haiku-container {
@@ -35,15 +55,8 @@ body {
   transition: none;
 }
 
-.sub-header {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  color: black;
-  cursor: pointer;
-}
-
-.sub-header-link:hover {
-  text-decoration: none;
+.card:hover {
+  box-shadow: 4px 4px 4px grey;
 }
 
 .page-footer {
@@ -63,3 +76,9 @@ body {
   font-size: 1.2em !important;
   cursor: pointer;
 }
+
+.ic:hover > .social-icon {
+    color: #007bff;
+    transform: rotate(360deg);
+    transition: all 0.3s linear;
+  }
