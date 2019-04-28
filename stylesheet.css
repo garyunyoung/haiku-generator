@@ -34,3 +34,21 @@ body {
   box-shadow: none;
   transition: none;
 }
+
+.page-footer {
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+
+.fab {
+  text-align: center;
+}
+
+.socials {
+  padding: 3vh 3vh 2vh 3vh !important;
+}
+
+.social-icon {
+  font-size: 1.2em !important;
+  cursor: pointer;
+}
