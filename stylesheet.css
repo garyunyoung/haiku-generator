@@ -1,4 +1,28 @@
 body {
-    font-family: "Major Mono Display", monospace;
-    font-family: "Cutive Mono", monospace;
-  }
+  font-family: "Major Mono Display", monospace;
+  font-family: "Cutive Mono", monospace;
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+
+.img {
+  width: 35vw;
+}
+
+.header {
+  padding: 3vh;
+  cursor: default;
+  font-weight: bold;
+}
+
+.main-haiku-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.main-haiku {
+  line-height: 1.5em;
+  margin-bottom: 5vh;
+}
