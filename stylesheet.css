@@ -8,14 +8,19 @@ body {
 }
 
 .bg-light {
-  background-color: transparent !important;
+  background-color: white !important;
+  border-bottom: 1px dashed grey;
+}
+
+.logo {
+    opacity: .6;
 }
 
 .img {
   width: 35vw;
 }
 
-.img:hover {
+.mic:hover > .img {
   transform: rotate(360deg);
   transition: all 0.5s linear;
 }
@@ -90,7 +95,6 @@ body {
   transform: rotate(360deg);
   transition: all 0.3s linear;
 }
-
 
 .rating {
   padding: 0.2vw;
