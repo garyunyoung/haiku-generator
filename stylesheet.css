@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   font-family: "Major Mono Display", monospace;
   font-family: "Cutive Mono", monospace;
+  
 }
 
 .bg-light {
@@ -56,9 +61,8 @@ body {
 }
 
 .card {
-    cursor: pointer;
-  }
-  
+  cursor: pointer;
+}
 
 .card:hover {
   box-shadow: 4px 4px 4px grey;
@@ -83,7 +87,7 @@ body {
 }
 
 .ic:hover > .social-icon {
-    color: #007bff;
-    transform: rotate(360deg);
-    transition: all 0.3s linear;
-  }
+  color: #007bff;
+  transform: rotate(360deg);
+  transition: all 0.3s linear;
+}
