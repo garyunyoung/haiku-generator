@@ -1,11 +1,10 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Major Mono Display", monospace;
   font-family: "Cutive Mono", monospace;
-  
 }
 
 .bg-light {
@@ -90,4 +89,28 @@ body {
   color: #007bff;
   transform: rotate(360deg);
   transition: all 0.3s linear;
+}
+
+
+
+.rating .stars .star {
+  padding: 0.2vw;
+  cursor: pointer;
+}
+
+.rating .stars .star:before {
+  font-family: "FontAwesome";
+  content: "\f005";
+  color: #d0e8f0;
+  font-size: 1.5em;
+}
+
+.rating .stars .star:hover:before,
+.rating .stars .star.to_rate:before,
+.rating .stars .star.rated:before {
+  color: #80c1d5;
+}
+
+.rating .stars .star.no_to_rate:before {
+  color: #d0e8f0;
 }
