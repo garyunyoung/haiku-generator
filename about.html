@@ -61,14 +61,16 @@
             alt="Responsive image"
           />
         </div>
-        <!-- <div id="typewriter" class="main-haiku-container col-sm"> -->
-        <div class="main-haiku-container col-sm">
+        <div id="typewriter" class="main-haiku-container col-sm">
+          <!-- <div class="main-haiku-container col-sm"> -->
           <h2 class="main-haiku ">
             Hello world! <br />
             Welcome to my page. <br />
-            This is a brief descritpion of what I an doing.
+            This is a brief descritpion of what I am doing.
             <div>
               <a href="./index.html" class="btn btn-dark">back</a>
+              <a href="./index.html#past-haikus" class="btn btn-dark">past haikus</a>
+
             </div>
           </h2>
         </div>
@@ -124,7 +126,21 @@
     </footer>
   </body>
 </html>
+
 <script>
+  // typewriter animation //
+  function animate(elements, callback) {
+    var i = 0;
+    (function iterate() {
+      if (i < elements.length) {
+        elements[i].style.display = "block";
+        animateNode(elements[i], iterate);
+        i++;
+      } else {
+        callback();
+      }
+    })();
+
     function animateNode(element, callback) {
       var pieces = [];
       if (element.nodeType == 1) {
@@ -151,7 +167,7 @@
   }
 
   animate($("#typewriter").children(), () => {
-    // document.getElementById("main-img").classList.add("spin");
-    // document.getElementById("sticky-nav").classList.add("fade-in");
+    document.getElementById("main-img").classList.add("spin");
+    document.getElementById("sticky-nav").classList.add("fade-in");
   });
 </script>
