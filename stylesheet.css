@@ -35,6 +35,17 @@ body {
   transition: none;
 }
 
+.sub-header {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  color: black;
+  cursor: pointer;
+}
+
+.sub-header-link:hover {
+  text-decoration: none;
+}
+
 .page-footer {
   margin-top: 5vh;
   margin-bottom: 3vh;
