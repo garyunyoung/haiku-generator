@@ -33,7 +33,7 @@
   </head>
 
   <body>
-    <nav class="navbar sticky-top navbar-light bg-light">
+    <nav id='sticky-nav' class="navbar sticky-top navbar-light bg-light">
       <a href="#"><img src="./favicon.png" class="logo"/></a>
       <!-- <p class="top">... welcome ...</p> -->
       <ul class="nav justify-content-end">
@@ -308,5 +308,7 @@
 
   animate($("#typewriter").children(), () => {
     document.getElementById("main-img").classList.add("spin");
+    document.getElementById("sticky-nav").classList.add("fade-in");
+
   });
 </script>

@@ -22,6 +22,12 @@ body {
 .bg-light {
   background-color: white !important;
   border-bottom: 1px dashed grey;
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: all 2s ease-in-out;
 }
 
 .logo {
