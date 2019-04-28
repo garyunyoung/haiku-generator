@@ -1,4 +1,4 @@
-html {
+/* html {
   scroll-behavior: smooth;
 }
 
@@ -15,15 +15,10 @@ body {
   font-family: "Cutive Mono", monospace;
 }
 
-.sub-container {
-  min-height: 80vh;
-}
-
 .bg-light {
   background-color: white !important;
   border-bottom: 1px dashed grey;
   opacity: 0;
-
 }
 
 .fade-in {
@@ -38,6 +33,7 @@ body {
 #main-img {
   width: 35vw;
 }
+
 .spin {
   transform: rotate(360deg);
   transition: all 0.5s linear;
@@ -49,18 +45,6 @@ body {
   font-weight: bold;
   opacity: 0.8;
   text-align: center;
-}
-
-.hide {
-  visibility: hidden;
-}
-
-.sub-header {
-  padding-top: 10vh;
-  margin-top: 15vh;
-  margin-bottom: 5vh;
-  color: black;
-  cursor: pointer;
 }
 
 .main-haiku-container {
@@ -81,13 +65,6 @@ body {
   transition: none;
 }
 
-.card {
-  cursor: pointer;
-}
-
-.card:hover {
-  box-shadow: 4px 4px 4px grey;
-}
 
 .page-footer {
   margin-top: 5vh;
@@ -112,21 +89,4 @@ body {
   transform: rotate(360deg);
   transition: all 0.3s linear;
 }
-
-.rating {
-  padding: 0.2vw;
-  cursor: pointer;
-}
-
-.stars .star:before {
-  font-family: "FontAwesome";
-  content: "\f005";
-  color: #d0e8f0;
-  font-size: 1.5em;
-}
-
-.rating .stars .star:hover:before,
-.rating .stars .star.to_rate:before,
-.rating .stars .star.rated:before {
-  color: #80c1d5;
-}
+ */
