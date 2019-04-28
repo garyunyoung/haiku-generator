@@ -55,6 +55,11 @@ body {
   transition: none;
 }
 
+.card {
+    cursor: pointer;
+  }
+  
+
 .card:hover {
   box-shadow: 4px 4px 4px grey;
 }
