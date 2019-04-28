@@ -26,3 +26,11 @@ body {
   line-height: 1.5em;
   margin-bottom: 5vh;
 }
+
+.btn-dark:not(:disabled):not(.disabled).active:focus,
+.btn-dark:not(:disabled):not(.disabled):active:focus,
+.btn.focus,
+.btn-dark:focus {
+  box-shadow: none;
+  transition: none;
+}
