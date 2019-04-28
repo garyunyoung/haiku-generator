@@ -92,13 +92,12 @@ body {
 }
 
 
-
-.rating .stars .star {
+.rating {
   padding: 0.2vw;
   cursor: pointer;
 }
 
-.rating .stars .star:before {
+.stars .star:before {
   font-family: "FontAwesome";
   content: "\f005";
   color: #d0e8f0;
@@ -109,8 +108,4 @@ body {
 .rating .stars .star.to_rate:before,
 .rating .stars .star.rated:before {
   color: #80c1d5;
-}
-
-.rating .stars .star.no_to_rate:before {
-  color: #d0e8f0;
 }
