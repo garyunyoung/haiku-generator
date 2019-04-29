@@ -68,6 +68,16 @@ body {
   box-shadow: 4px 4px 4px grey;
 }
 
+/* -- Show More Button -- */
+
+.show-btn {
+  border: 1px dashed grey;
+}
+
+.show-btn:hover {
+  border: 1px solid black;
+}
+
 /* --- Star Ratings --- */
 .rating {
   padding: 0.2vw;
@@ -117,4 +127,19 @@ body {
 .spin {
   transform: rotate(360deg);
   transition: all 0.5s linear;
+}
+
+#hide {
+  height: 0;
+  display: none;
+}
+
+.show {
+  height: auto !important;
+  display: block !important;
+  transition: all 2s ease-in-out;
+}
+
+.hide {
+  display: none;
 }
