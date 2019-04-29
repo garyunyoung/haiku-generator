@@ -347,7 +347,11 @@
     <script type="text/javascript" src="./js/rating.js"></script>
     <script type="text/javascript" src="./js/typewriter.js"></script>
     <script type="text/javascript" src="./js/toggle.js"></script>
+    <script> 
+      animate($(".typewriter").children(), () => {
+        document.getElementById("main-img").classList.add("spin")
+        document.getElementById("sticky-nav").classList.add("fade-in")
+      })
+    </script>
   </body>
 </html>
-
-

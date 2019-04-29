@@ -88,15 +88,13 @@
           </h2>
         </div>
 
-        <div class="main-haiku-container col-sm what-is-haiku hide typwriter">
+        <div id="what-is-haiku" class="main-haiku-container col-sm what-is-haiku hide typwriter">
             <h2 class="main-haiku sub-haiku">
               <strong>What is a Haiku? </strong><br />
-                <!-- <small> -->
                 a Japanese poem of 17 syllables, <br>
                 3 lines of 5, 7, and 5, <br>
                 traditionally evoking images of the natural world.
-              <!-- </small> -->
-              <div>
+               <div>
                 <button onClick='showAbout()' class="btn btn-dark">back</button>
               </div>
             </h2>
@@ -240,17 +238,22 @@
 
     <!-- JS -->
     <script type="text/javascript" src="./js/typewriter.js"></script>
+    <script>
+      function showWhatIs() { 
+        document.querySelector(".about-des").classList.add("hide")
+        document.querySelector(".what-is-haiku").classList.remove("hide")
+        animate($("#what-is-haiku").children())
+      }
+
+      function showAbout() { 
+        document.querySelector(".about-des").classList.remove("hide")
+        document.querySelector(".what-is-haiku").classList.add("hide")
+        animate($(".typewriter").children())
+
+      }
+
+      animate($(".typewriter").children())
+
+    </script>
   </body>
 </html>
-
-<script>
-function showWhatIs() { 
-    document.querySelector(".about-des").classList.add("hide")
-    document.querySelector(".what-is-haiku").classList.remove("hide")
-  }
-
-  function showAbout() { 
-    document.querySelector(".about-des").classList.remove("hide")
-    document.querySelector(".what-is-haiku").classList.add("hide")
-  }
-</script>
