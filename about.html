@@ -73,7 +73,7 @@
         </div>
         
         <!-- Descpition -->
-        <div id="typewriter" class="main-haiku-container col-sm">
+        <div class="main-haiku-container col-sm about-des typewriter">
           <h2 class="main-haiku ">
             Hello world! <br />
             Welcome to my Haiku page. <br />
@@ -81,12 +81,26 @@
             <div>
               <a href="./index.html" class="btn btn-dark">back</a>
               <a href="#contact-form" class="btn btn-dark">contact</a>
-              <a href="./index.html#past-haikus" class="btn btn-dark"
-                >past haikus</a
+              <button onClick='showWhatIs()' class="btn btn-dark"
+                >haiku?</button
               >
             </div>
           </h2>
         </div>
+
+        <div class="main-haiku-container col-sm what-is-haiku hide typwriter">
+            <h2 class="main-haiku ">
+              <strong>What is a Haiku? </strong><br />
+                <small>
+                a Japanese poem of 17 syllables, <br>
+                3 lines of 5, 7, and 5, <br>
+                traditionally evoking images of the natural world.
+              </small>
+              <div>
+                <button onClick='showAbout()' class="btn btn-dark">back</button>
+              </div>
+            </h2>
+          </div>
       </div>
     </div>
 
@@ -228,3 +242,15 @@
     <script type="text/javascript" src="./js/typewriter.js"></script>
   </body>
 </html>
+
+<script>
+function showWhatIs() { 
+    document.querySelector(".about-des").classList.add("hide")
+    document.querySelector(".what-is-haiku").classList.remove("hide")
+  }
+
+  function showAbout() { 
+    document.querySelector(".about-des").classList.remove("hide")
+    document.querySelector(".what-is-haiku").classList.add("hide")
+  }
+</script>

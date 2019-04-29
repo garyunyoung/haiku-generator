@@ -36,7 +36,9 @@ function animate(elements, callback) {
   }
 }
 
-animate($("#typewriter").children(), () => {
+
+animate($(".typewriter").children(), () => {
   document.getElementById("main-img").classList.add("spin");
   document.getElementById("sticky-nav").classList.add("fade-in");
 });
+
