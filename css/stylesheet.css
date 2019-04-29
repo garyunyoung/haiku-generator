@@ -28,23 +28,25 @@ body {
 }
 
 /* --- Home Page --- */
+.mic {
+  display: flex;
+  justify-content: center;
+}
+
 #main-img {
   width: 35vw;
+  height: 32vw;
+  object-fit: contain;
 }
 
 .main-haiku-container {
   padding-top: 10vh;
-  /* display: flex;
-  flex-flow: column;
-  justify-content: center; */
 }
 .main-haiku {
   line-height: 1.5em;
   margin-bottom: 5vh;
 }
 
-/* .btn-dark:not(:disabled):not(.disabled).active:focus, */
-/* .btn.focus, */
 .btn-dark:not(:disabled):not(.disabled):active:focus,
 .btn-dark:focus {
   box-shadow: none;
@@ -117,4 +119,24 @@ body {
 .spin {
   transform: rotate(360deg);
   transition: all 0.5s linear;
+}
+
+/* --- Media Queries */
+/* --- Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+  .main-haiku {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  .btn {
+    font-size: 0.5em;
+  }
+}
+
+/* --- Tablet ---*/
+@media (min-width: 550px) and (max-width: 991px) {
+  .main-haiku {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
 }
