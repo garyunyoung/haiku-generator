@@ -1,3 +1,4 @@
+// --- Star Rating JQuery --- //
 jQuery(document).ready(function($) {
   $(".rating .star")
     .hover(function() {
@@ -35,7 +36,5 @@ jQuery(document).ready(function($) {
         .find(".star:gt(" + $(this).index() + ")")
         .removeClass("no_to_rate")
         .removeClass("rated");
-      /*Save your rate*/
-      /*TODO*/
     });
 });

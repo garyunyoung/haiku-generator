@@ -2,14 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.top {
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  text-transform: uppercase;
-  pointer-events: none;
-}
-
 body {
   font-family: "Major Mono Display", monospace;
   font-family: "Cutive Mono", monospace;
@@ -19,48 +11,19 @@ body {
   min-height: 80vh;
 }
 
+/* --- Nav Bar --- */
 .bg-light {
   background-color: white !important;
   border-bottom: 1px dashed grey;
   opacity: 0;
-
 }
-
-.fade-in {
-  opacity: 1;
-  transition: all 2s ease-in-out;
-}
-
 .logo {
   opacity: 0.6;
 }
 
+/* --- Home Page --- */
 #main-img {
   width: 35vw;
-}
-.spin {
-  transform: rotate(360deg);
-  transition: all 0.5s linear;
-}
-
-.header {
-  padding: 3vh;
-  cursor: default;
-  font-weight: bold;
-  opacity: 0.8;
-  text-align: center;
-}
-
-.hide {
-  visibility: hidden;
-}
-
-.sub-header {
-  padding-top: 10vh;
-  margin-top: 15vh;
-  margin-bottom: 5vh;
-  color: black;
-  cursor: pointer;
 }
 
 .main-haiku-container {
@@ -81,6 +44,24 @@ body {
   transition: none;
 }
 
+/* --- Headers --- */
+.header {
+  padding: 3vh;
+  cursor: default;
+  font-weight: bold;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.sub-header {
+  padding-top: 10vh;
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+  color: black;
+  cursor: pointer;
+}
+
+/* --- Past Haikus --- */
 .card {
   cursor: pointer;
 }
@@ -89,30 +70,7 @@ body {
   box-shadow: 4px 4px 4px grey;
 }
 
-.page-footer {
-  margin-top: 5vh;
-  border-top: 1px dashed grey;
-}
-
-.fab {
-  text-align: center;
-}
-
-.socials {
-  padding: 3vh 3vh 2vh 3vh !important;
-}
-
-.social-icon {
-  font-size: 1.2em !important;
-  cursor: pointer;
-}
-
-.ic:hover > .social-icon {
-  color: #007bff;
-  transform: rotate(360deg);
-  transition: all 0.3s linear;
-}
-
+/* --- Star Ratings --- */
 .rating {
   padding: 0.2vw;
   cursor: pointer;
@@ -131,9 +89,43 @@ body {
   color: #80c1d5;
 }
 
+/* --- Footer --- */
+.page-footer {
+  margin-top: 5vh;
+  border-top: 1px dashed grey;
+}
 
-.send {
-    background-color: white;
-    color: black;
-    border: 1px dashed grey;
+.fab {
+  text-align: center;
+}
+
+/* --- Socials --- */
+.socials {
+  padding: 3vh 3vh 2vh 3vh !important;
+}
+
+.social-icon {
+  font-size: 1.2em !important;
+  cursor: pointer;
+}
+
+.ic:hover > .social-icon {
+  color: #007bff;
+  transform: rotate(360deg);
+  transition: all 0.3s linear;
+}
+
+/* --- Animations --- */
+.fade-in {
+  opacity: 1;
+  transition: all 2s ease-in-out;
+}
+
+.spin {
+  transform: rotate(360deg);
+  transition: all 0.5s linear;
+}
+
+.hide {
+  visibility: hidden;
 }

@@ -1,3 +1,4 @@
+// --- Typewriter JS --- //
 function animate(elements, callback) {
   var i = 0;
   (function iterate() {
