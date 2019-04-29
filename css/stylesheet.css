@@ -65,6 +65,10 @@ body {
 
 /* -- Show More Button -- */
 
+.button-container {
+  margin-top: 3vh;
+}
+
 .show-btn {
   border: 1px dashed grey;
 }
@@ -126,13 +130,12 @@ body {
 
 #hide {
   height: 0;
-  display: none;
+  overflow: hidden;
+  transition: height 1s linear;
 }
 
 .show {
-  height: auto !important;
-  display: block !important;
-  transition: all 2s ease-in-out;
+  height: 50vh !important;
 }
 
 .hide {
