@@ -5,11 +5,15 @@ html {
 body {
   font-family: "Major Mono Display", monospace;
   font-family: "Cutive Mono", monospace;
-  outline: 1px solid red !important;
+}
+
+.container {
+  padding-top: 13vh;
+  min-height: 90vh;
 }
 
 .sub-container {
-  min-height: 80vh;
+  min-height: 78vh;
 }
 
 /* --- Nav Bar --- */
@@ -18,6 +22,7 @@ body {
   border-bottom: 1px dashed grey;
   opacity: 0;
 }
+
 .logo {
   opacity: 0.6;
 }
@@ -28,18 +33,19 @@ body {
 }
 
 .main-haiku-container {
-  display: flex;
+  padding-top: 10vh;
+  /* display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: center; */
 }
 .main-haiku {
   line-height: 1.5em;
   margin-bottom: 5vh;
 }
 
-.btn-dark:not(:disabled):not(.disabled).active:focus,
+/* .btn-dark:not(:disabled):not(.disabled).active:focus, */
+/* .btn.focus, */
 .btn-dark:not(:disabled):not(.disabled):active:focus,
-.btn.focus,
 .btn-dark:focus {
   box-shadow: none;
   transition: none;
@@ -48,11 +54,8 @@ body {
 /* --- Headers --- */
 .header {
   font-weight: bold;
-  cursor: default;
   color: black;
   opacity: 0.8;
-  padding: 3vh;
-  margin-top: 10vh;
   margin-bottom: 5vh;
 }
 
