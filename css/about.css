@@ -6,3 +6,8 @@
 .send:hover {
   border: 1px solid black;
 }
+
+.sub-haiku {
+  font-size: 1.7em;
+  line-height: 1.5em;
+}
