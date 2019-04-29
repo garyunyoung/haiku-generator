@@ -1,5 +1,5 @@
 // --- Typewriter JS --- //
-function animate(elements, callback) {
+function animate(elements, callback = () => {}) {
   var i = 0;
   (function iterate() {
     if (i < elements.length) {
@@ -36,9 +36,4 @@ function animate(elements, callback) {
   }
 }
 
-
-animate($(".typewriter").children(), () => {
-  document.getElementById("main-img").classList.add("spin");
-  document.getElementById("sticky-nav").classList.add("fade-in");
-});
 
