@@ -1,7 +1,8 @@
 function show() {
+
   document.getElementById("hide").classList.add("show");
 
-  if ((document.getElementById("hide").classList = "show")) {
+  if (document.getElementById("hide").classList.contains("show")) {
     document.getElementById("show-more").classList.add("hide");
     document.getElementById("show-less").classList.remove("hide");
   }
@@ -10,7 +11,7 @@ function show() {
 function showLess() {
   document.getElementById("hide").classList.remove("show");
 
-  if ((document.getElementById("hide").classList = "row")) {
+  if (document.getElementById("hide").classList.contains("row")) {
     document.getElementById("show-more").classList.remove("hide");
     document.getElementById("show-less").classList.add("hide");
   }
