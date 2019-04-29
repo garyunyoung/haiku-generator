@@ -5,6 +5,7 @@ html {
 body {
   font-family: "Major Mono Display", monospace;
   font-family: "Cutive Mono", monospace;
+  outline: 1px solid red !important;
 }
 
 .sub-container {
@@ -46,19 +47,13 @@ body {
 
 /* --- Headers --- */
 .header {
-  padding: 3vh;
-  cursor: default;
   font-weight: bold;
-  opacity: 0.8;
-  text-align: center;
-}
-
-.sub-header {
-  padding-top: 10vh;
-  margin-top: 15vh;
-  margin-bottom: 5vh;
+  cursor: default;
   color: black;
-  cursor: pointer;
+  opacity: 0.8;
+  padding: 3vh;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
 }
 
 /* --- Past Haikus --- */
@@ -76,16 +71,15 @@ body {
   cursor: pointer;
 }
 
-.stars .star:before {
+.star:before {
   font-family: "FontAwesome";
   content: "\f005";
   color: #d0e8f0;
-  font-size: 1.5em;
 }
 
-.rating .stars .star:hover:before,
-.rating .stars .star.to_rate:before,
-.rating .stars .star.rated:before {
+.star:hover:before,
+.star.to_rate:before,
+.star.rated:before {
   color: #80c1d5;
 }
 
@@ -93,10 +87,6 @@ body {
 .page-footer {
   margin-top: 5vh;
   border-top: 1px dashed grey;
-}
-
-.fab {
-  text-align: center;
 }
 
 /* --- Socials --- */
@@ -124,8 +114,4 @@ body {
 .spin {
   transform: rotate(360deg);
   transition: all 0.5s linear;
-}
-
-.hide {
-  visibility: hidden;
 }
