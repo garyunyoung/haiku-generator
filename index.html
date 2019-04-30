@@ -51,7 +51,7 @@
           <a class="nav-link" href="./about.html">About</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link logo" href="./other.html">☆</a>
+            <a class="nav-link" href="./other.html">✭</a>
         </li>
       </ul>
     </nav>
@@ -59,7 +59,7 @@
     <!-- Home -->
     <div class="container">
       <div class="row">
-        <div class="mic col-sm">
+        <div class="mic col-sm-6">
           <img
             src="./images/rmh.png"
             id="main-img"
@@ -69,13 +69,13 @@
         </div>
 
         <!-- Haiku -->
-        <div class="main-haiku-container col-md typewriter">
+        <div class="main-haiku-container pt-5 col-sm-6 typewriter">
           <h2 class="main-haiku">
             An old silent pond... <br />A frog jumps into the pond,
-            <br />splash! Silence again.
-            <div>
+            <br />splash! Silence again. 
+            <div class='mt-2'>
               <button type="button" onClick='animateMain()' class="btn btn-dark">generate</button>
-              <a href="#past-haikus" class="btn btn-dark">see more</a>
+              <a href="#past-haikus" class="btn btn-dark">see more haikus</a>
               <a href="./about.html" class="btn btn-dark">about</a>
             </div>
           </h2>
@@ -101,7 +101,7 @@
                 Everything I touch <br />with tenderness, alas, <br />pricks
                 like a bramble.
               </p>
-              <div class="rating">
+              <div class="rating p-1">
                 <div class="stars">
                   <a class="star rated"></a>
                   <a class="star"></a>
@@ -114,7 +114,7 @@
           <div class="card p-4 text-center">
             <blockquote class="blockquote mb-0">
               <p>O snail <br />Climb Mount Fuji, <br />But slowly, slowly!</p>
-              <div class="rating">
+              <div class="rating p-1">
                 <div class="stars">
                   <a class="star rated"></a>
                   <a class="star"></a>
@@ -130,7 +130,7 @@
                 A mountain village<br />aunder the piled-up snow <br />the sound
                 of water.
               </p>
-              <div class="rating">
+              <div class="rating p-1">
                 <div class="stars">
                   <a class="star rated"></a>
                   <a class="star"></a>
@@ -146,7 +146,7 @@
                 Autumn moonlight— <br />a worm digs silently<br />into the
                 chestnut.
               </p>
-              <div class="rating">
+              <div class="rating p-1">
                 <div class="stars">
                   <a class="star rated"></a>
                   <a class="star"></a>
@@ -162,7 +162,7 @@
                 Night bus…
                 <br />a handprint fills <br />with moonlight
               </p>
-              <div class="rating">
+              <div class="rating p-1">
                 <div class="stars">
                   <a class="star rated"></a>
                   <a class="star"></a>
@@ -178,7 +178,7 @@
                 Reaching the top
                 <br />of the metro escalator – <br />a warm breeze
               </p>
-              <div class="rating">
+              <div class="rating p-1">
                 <div class="stars">
                   <a class="star rated"></a>
                   <a class="star"></a>
@@ -201,7 +201,7 @@
                 Everything I touch <br />with tenderness, alas, <br />pricks
                 like a bramble.
               </p>
-              <div class="rating">
+              <div class="rating p-1">
                 <div class="stars">
                   <a class="star rated"></a>
                   <a class="star"></a>
@@ -214,7 +214,7 @@
           <div class="card p-4 text-center">
             <blockquote class="blockquote mb-0">
               <p>O snail <br />Climb Mount Fuji, <br />But slowly, slowly!</p>
-              <div class="rating">
+              <div class="rating p-1">
                 <div class="stars">
                   <a class="star rated"></a>
                   <a class="star"></a>
@@ -230,7 +230,7 @@
                 A mountain village<br />aunder the piled-up snow <br />the sound
                 of water.
               </p>
-              <div class="rating">
+              <div class="rating p-1">
                 <div class="stars">
                   <a class="star rated"></a>
                   <a class="star"></a>
@@ -246,7 +246,7 @@
                 Reaching the top
                 <br />of the metro escalator – <br />a warm breeze
               </p>
-              <div class="rating">
+              <div class="rating p-1">
                 <div class="stars">
                   <a class="star rated"></a>
                   <a class="star"></a>
@@ -262,7 +262,7 @@
                 Night bus…
                 <br />a handprint fills <br />with moonlight
               </p>
-              <div class="rating">
+              <div class="rating p-1">
                 <div class="stars">
                   <a class="star rated"></a>
                   <a class="star"></a>
@@ -278,7 +278,7 @@
                 Autumn moonlight— <br />a worm digs silently<br />into the
                 chestnut.
               </p>
-              <div class="rating">
+              <div class="rating p-1">
                 <div class="stars">
                   <a class="star rated"></a>
                   <a class="star"></a>
@@ -292,7 +292,7 @@
       </div>
 
 
-      <div class='row justify-content-center button-container'>
+      <div class='row justify-content-center pt-4'>
         <button onClick="show()" class='show-btn btn' id='show-more'>show more</button>
         <button onClick="showLess()" class='show-btn btn hide' id='show-less'>show less</button>
       </div>  
@@ -301,9 +301,9 @@
 
 
     <!-- Footer -->
-    <footer class="page-footer font-small text-center">
+    <footer class="page-footer font-small text-center mt-4">
       <div class="row">
-        <div class="col-12 socials">
+        <div class="col-12 px-4 pt-4">
           <a class="ic fb-ic">
             <i
               class="social-icon fa fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"
@@ -342,7 +342,8 @@
 
       <div class="footer-copyright text-center py-3">
           © 2019 Copyright:
-          <a href="#"> haikugenerator.com</a>
+          <a href="#"> haikugenerator.com</a> <br>
+          Text: <a href='https://www.poemhunter.com/'>poemhunter.com</a>
         </div>
       </footer>
     </footer>
