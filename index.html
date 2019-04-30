@@ -71,7 +71,7 @@
             An old silent pond... <br />A frog jumps into the pond,
             <br />splash! Silence again.
             <div>
-              <button type="button" class="btn btn-dark">generate</button>
+              <button type="button" onClick='animateMain()' class="btn btn-dark">generate</button>
               <a href="#past-haikus" class="btn btn-dark">see more haikus</a>
               <a href="./about.html" class="btn btn-dark">about</a>
             </div>
@@ -349,6 +349,10 @@
     <script type="text/javascript" src="./js/typewriter.js"></script>
     <script type="text/javascript" src="./js/toggle.js"></script>
     <script> 
+      function animateMain() {
+        animate($(".typewriter").children())
+      }
+      
       animate($(".typewriter").children(), () => {
         document.getElementById("main-img").classList.add("spin")
         document.getElementById("sticky-nav").classList.add("fade-in")
