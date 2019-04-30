@@ -30,7 +30,7 @@ function animate(elements, callback = () => {}) {
 
       (function addText() {
         element.data += pieces.shift();
-        setTimeout(pieces.length ? addText : callback, 1000 / 30);
+        setTimeout(pieces.length ? addText : callback, 1000 / 45);
       })();
     }
   }
