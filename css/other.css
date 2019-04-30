@@ -1,3 +1,17 @@
 .fade-in {
-    transition: none;
+  transition: none;
+}
+
+.container {
+  padding-top: 5vh;
+}
+
+.poem-text {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.poem-text:hover {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
